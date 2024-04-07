@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
 
-  final void Function() startQuiz;
+  final void Function() startQuiz; // Fungsi untuk memulai kuis
 
   @override
   Widget build(context) {
@@ -12,18 +12,13 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Opacity(
-            opacity: 0.6,
-            child: Image(
-              image: AssetImage('images/frame.png'),
-              width: 300,
-            ),
-          ),
+          // Menampilkan logo
           const Image(
             image: AssetImage('images/logo.png'),
             width: 250,
           ),
           const SizedBox(height: 30),
+          // Tombol untuk memulai kuis
           OutlinedButton.icon(
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
