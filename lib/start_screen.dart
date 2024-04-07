@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
 
-  final void Function() startQuiz;
+  final void Function() startQuiz; // Fungsi untuk memulai kuis
 
   @override
   Widget build(context) {
@@ -12,6 +12,7 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          // Menampilkan gambar frame dengan opasitas 0.6
           const Opacity(
             opacity: 0.6,
             child: Image(
@@ -19,11 +20,13 @@ class StartScreen extends StatelessWidget {
               width: 300,
             ),
           ),
+          // Menampilkan logo
           const Image(
             image: AssetImage('images/logo.png'),
             width: 250,
           ),
           const SizedBox(height: 80),
+          // Menampilkan teks pengantar
           Text(
             'Learn Flutter the fun way!',
             style: GoogleFonts.lato(
@@ -32,6 +35,7 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 30),
+          // Tombol untuk memulai kuis
           OutlinedButton.icon(
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(

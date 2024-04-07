@@ -1,11 +1,11 @@
-import 'package:quiz/models/quiz_question.dart';
+import 'package:quiz/models/quiz_question.dart'; // Import model QuizQuestion
 
-//kelas question untuk list soal dan jawaban
+// Kelas question untuk list soal dan jawaban
 const questions = [
   QuizQuestion(
-    '1. Fungsi dari Authentication server adalah...',
+    '1. Fungsi dari Authentication server adalah...', // Pertanyaan 1
     [
-      'Untuk mengenali user yang berintegrasi ke jaringan dan memuat semua informasi dariuser tersebut.',
+      'Untuk mengenali user yang berintegrasi ke jaringan dan memuat semua informasi dari user tersebut.',
       'Untuk melihat pengguna yang masuk ',
       'Untuk membatasi akun yang masuk ',
       'Jawaban B dan C benar ',
@@ -13,7 +13,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-      '2. Symantec Norton Personal Firewall, Keri0 Personal adalah contoh dari...',
+      '2. Symantec Norton Personal Firewall, Keri0 Personal adalah contoh dari...', // Pertanyaan 2
       [
         'Personal Firewall',
         'Firewall',
@@ -22,7 +22,7 @@ const questions = [
         'Blayteam',
       ]),
   QuizQuestion(
-    '3. Berikut ini merupakan fungsi dari Firewall, kecuali...',
+    '3. Berikut ini merupakan fungsi dari Firewall, kecuali...', // Pertanyaan 3
     [
       'Melakukan pembuatan virus',
       'Mengatur dan mengontrol lalu lintas jaringan',
@@ -32,7 +32,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '4.	Proses yang dilakukan oleh firewall untuk ‘menghadang’dan memproses data dalam sebuah paket untuk menentukan bahwa paket tersebut diizinkan atau ditolak, berdasarkan kebijakanakses (access policy) yang diterapkan oleh seorang administrator adalah...',
+    '4. Proses yang dilakukan oleh firewall untuk \'menghadang\' dan memproses data dalam sebuah paket untuk menentukan bahwa paket tersebut diizinkan atau ditolak, berdasarkan kebijakan akses (access policy) yang diterapkan oleh seorang administrator adalah...', // Pertanyaan 4
     [
       'Inspeksi paket',
       'Drop paket',
@@ -42,7 +42,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '5. Berikut ini adalah jenis jenis firewall, kecuali...',
+    '5. Berikut ini adalah jenis-jenis firewall, kecuali...', // Pertanyaan 5
     [
       'Multilayer Inspection Firewall',
       'Packet Filtering Gateway',
@@ -52,7 +52,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '6.	Jenis firewall yang memberikan fitur terbanyak dan memeberikan tingkat keamanan yang paling tinggi adalah...',
+    '6. Jenis firewall yang memberikan fitur terbanyak dan memberikan tingkat keamanan yang paling tinggi adalah...', // Pertanyaan 6
     [
       'Statefull Multilayer Inspection Firewall',
       'Packet Filtering Gateway',
@@ -62,7 +62,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '7.	Yang termasuk jenis metode enkripsi adalah...',
+    '7. Yang termasuk jenis metode enkripsi adalah...', // Pertanyaan 7
     [
       'SSL',
       'SDSL',
@@ -72,7 +72,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '8.	Sekumpulan teknik untuk memanipulasi orang sehingga orang tersebut membocorkan informasi rahasia disebut...',
+    '8. Sekumpulan teknik untuk memanipulasi orang sehingga orang tersebut membocorkan informasi rahasia disebut...', // Pertanyaan 8
     [
       'Social Engineering',
       'Account compromise',
@@ -82,7 +82,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '9.	Mensyaratkan bahwa pengirim suatu informasi dapat diidentifikasi dengan benar dan adajaminan bahwa identitas yang didapat tidak palsu adalah...',
+    '9. Mensyaratkan bahwa pengirim suatu informasi dapat diidentifikasi dengan benar dan ada jaminan bahwa identitas yang didapat tidak palsu adalah...', // Pertanyaan 9
     [
       'Authentication',
       'Integrity',
@@ -92,7 +92,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '10.Suatu proses mengamankan suatu informasi dengan membuat informasi tersebut tidak dapat dibaca tanpa bantuan pengetahuan khusus, disebut sebagai',
+    '10. Suatu proses mengamankan suatu informasi dengan membuat informasi tersebut tidak dapat dibaca tanpa bantuan pengetahuan khusus, disebut sebagai', // Pertanyaan 10
     [
       'Enkripsi',
       'Dekripsi',

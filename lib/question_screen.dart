@@ -1,39 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:quiz/answer_button.dart';
-import 'package:quiz/data/question.dart';
+import 'package:quiz/answer_button.dart'; // Mengimpor widget AnswerButton
+import 'package:quiz/data/question.dart'; // Mengimpor model data Question
 
+// Mendefinisikan widget QuestionsScreen yang merupakan StatefulWidget
 class QuestionsScreen extends StatefulWidget {
+  // Konstruktor untuk widget QuestionsScreen
   const QuestionsScreen({
     super.key,
     required this.onSelectAnswer,
   });
 
+  // Fungsi callback untuk menangani saat jawaban dipilih
   final void Function(String answer) onSelectAnswer;
 
+  // Override metode createState untuk membuat state untuk QuestionsScreen
   @override
   State<QuestionsScreen> createState() {
     return _QuestionsScreenState();
   }
 }
 
+// Mendefinisikan state untuk widget QuestionsScreen
 class _QuestionsScreenState extends State<QuestionsScreen> {
-  var currentQuestionIndex = 0;
+  var currentQuestionIndex = 0; // Menginisialisasi currentQuestionIndex
 
+  // Fungsi untuk menangani saat jawaban dipilih
   void answerQuestion(String selectedAnswer) {
+    // Memanggil fungsi callback dengan jawaban yang dipilih
     widget.onSelectAnswer(selectedAnswer);
-    // currentQuestionIndex = currentQuestionIndex + 1;
-    // currentQuestionIndex += 1;
+    // Memperbarui currentQuestionIndex dan membangun ulang UI
     setState(() {
-      currentQuestionIndex++; // increments the value by 1
+      currentQuestionIndex++; // menambah nilai sebanyak 1
     });
   }
 
+  // Metode build untuk membuat UI
   @override
   Widget build(context) {
+    // Mendapatkan pertanyaan saat ini dari daftar pertanyaan
     final currentQuestion = questions[currentQuestionIndex];
 
+    // Menampilkan tata letak UI
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -52,10 +61,12 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 30),
+            // Menampilkan tombol jawaban untuk pertanyaan saat ini
             ...currentQuestion.shuffledAnswers.map((answer) {
               return AnswerButton(
                 answerText: answer,
                 onTap: () {
+                  // Memanggil fungsi answerQuestion ketika tombol jawaban ditekan
                   answerQuestion(answer);
                 },
               );
