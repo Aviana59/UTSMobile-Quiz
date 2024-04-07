@@ -47,40 +47,66 @@ class ResultsScreen extends StatelessWidget {
     // Membuat tampilan hasil kuis
     return SizedBox(
       width: double.infinity,
-      child: Container(
-        margin: const EdgeInsets.all(40),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            // Menampilkan jumlah pertanyaan yang dijawab dengan benar
-            Text(
-              'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
-              style: GoogleFonts.lato(
-                color: const Color.fromARGB(255, 46, 10, 73),
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Image(
+            image: AssetImage('images/logo.png'),
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(255, 95, 9, 129),
+              borderRadius: const BorderRadius.all(
+                Radius.circular(40),
               ),
-              textAlign: TextAlign.center,
+              border: Border.all(width: 3.0, color: Colors.black),
+              boxShadow: const <BoxShadow>[
+                BoxShadow(
+                  color: Colors.black87,
+                  offset: Offset(10, 10),
+                ),
+              ],
             ),
-            const SizedBox(
-              height: 30,
-            ),
-            // Menampilkan ringkasan hasil kuis menggunakan widget QuestionsSummary
-            QuestionsSummary(summaryData),
-            const SizedBox(
-              height: 30,
-            ),
-            // Tombol untuk me-restart kuis
-            TextButton.icon(
-              onPressed: onRestart,
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
+            margin: const EdgeInsets.all(40),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Menampilkan jumlah pertanyaan yang dijawab dengan benar
+                  Text(
+                    'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
+                    style: GoogleFonts.lato(
+                      color: const Color.fromARGB(255, 246, 234, 255),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  // Menampilkan ringkasan hasil kuis menggunakan widget QuestionsSummary
+                  QuestionsSummary(summaryData),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  // Tombol untuk me-restart kuis
+                  TextButton.icon(
+                    onPressed: onRestart,
+                    style: TextButton.styleFrom(
+                      backgroundColor: Colors.white,
+                    ),
+                    icon: const Icon(Icons.refresh),
+                    label: const Text('Restart Quiz!'),
+                  )
+                ],
               ),
-              icon: const Icon(Icons.refresh),
-              label: const Text('Restart Quiz!'),
-            )
-          ],
-        ),
+            ),
+          ),
+        ],
       ),
     );
   }

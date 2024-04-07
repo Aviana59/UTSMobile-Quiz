@@ -21,10 +21,10 @@ class QuestionIdentifier extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         color: isCorrectAnswer
-            ? const Color.fromARGB(255, 150, 198,
-                241) // Warna latar belakang untuk jawaban yang benar
-            : const Color.fromARGB(255, 249, 133,
-                241), // Warna latar belakang untuk jawaban yang salah
+            ? const Color.fromARGB(255, 92, 164,
+                228) // Warna latar belakang untuk jawaban yang benar
+            : const Color.fromARGB(255, 180, 55,
+                174), // Warna latar belakang untuk jawaban yang salah
         borderRadius: BorderRadius.circular(100),
       ),
       child: Text(

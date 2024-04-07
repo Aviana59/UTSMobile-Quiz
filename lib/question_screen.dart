@@ -51,6 +51,11 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            const Image(
+              image: AssetImage('images/logo.png'),
+              width: 100,
+              height: 100,
+            ),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,

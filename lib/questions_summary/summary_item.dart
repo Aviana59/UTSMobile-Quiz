@@ -46,13 +46,15 @@ class SummaryItem extends StatelessWidget {
                 // Menampilkan jawaban pengguna
                 Text(itemData['user_answer'] as String,
                     style: const TextStyle(
-                      color: Color.fromARGB(255, 202, 171, 252),
+                      color: Color.fromARGB(255, 234, 220, 255),
                     )),
                 // Menampilkan jawaban yang benar
-                Text(itemData['correct_answer'] as String,
-                    style: const TextStyle(
-                      color: Color.fromARGB(255, 181, 254, 246),
-                    )),
+                Text(
+                  itemData['correct_answer'] as String,
+                  style: const TextStyle(
+                    color: Color.fromARGB(255, 92, 164, 228),
+                  ),
+                ),
               ],
             ),
           ),

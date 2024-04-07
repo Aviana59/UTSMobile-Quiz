@@ -32,13 +32,13 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '4. Proses yang dilakukan oleh firewall untuk \'menghadang\' dan memproses data dalam sebuah paket untuk menentukan bahwa paket tersebut diizinkan atau ditolak, berdasarkan kebijakan akses (access policy) yang diterapkan oleh seorang administrator adalah...', // Pertanyaan 4
+    '4. Jenis ekstensi file manakah yang memiliki resiko terbesar dalam infeksi malware?', // Pertanyaan 4
     [
-      'Inspeksi paket',
-      'Drop paket',
-      'Access paket',
-      'Firewall',
-      'Anti-spam',
+      '.exe',
+      '.png',
+      '.txt',
+      '.pdf',
+      '.dart',
     ],
   ),
   QuizQuestion(
@@ -92,7 +92,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    '10. Suatu proses mengamankan suatu informasi dengan membuat informasi tersebut tidak dapat dibaca tanpa bantuan pengetahuan khusus, disebut sebagai', // Pertanyaan 10
+    '10. Suatu proses mengamankan suatu informasi dengan membuat informasi tersebut tidak dapat dibaca tanpa bantuan pengetahuan khusus, disebut sebagai...', // Pertanyaan 10
     [
       'Enkripsi',
       'Dekripsi',
