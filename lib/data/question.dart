@@ -1,6 +1,6 @@
 import 'package:quiz/models/quiz_question.dart';
 
-//kelas question untuk list soal dan jawaban
+//question untuk list soal dan jawaban
 const questions = [
   QuizQuestion(
     '1. Fungsi dari Authentication server adalah...',

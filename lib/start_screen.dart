@@ -23,14 +23,6 @@ class StartScreen extends StatelessWidget {
             image: AssetImage('images/logo.png'),
             width: 250,
           ),
-          const SizedBox(height: 80),
-          Text(
-            'Learn Flutter the fun way!',
-            style: GoogleFonts.lato(
-              color: const Color.fromARGB(255, 237, 223, 252),
-              fontSize: 24,
-            ),
-          ),
           const SizedBox(height: 30),
           OutlinedButton.icon(
             onPressed: startQuiz,

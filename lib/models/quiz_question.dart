@@ -1,5 +1,5 @@
 class QuizQuestion {
-  const QuizQuestion(this.text, this.answers);
+  const QuizQuestion(this.text, this.answers); //class QuizQuestion untuk menyimpan data soal dan jawaban
 
   final String text;
   final List<String> answers;
