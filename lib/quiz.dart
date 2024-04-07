@@ -66,6 +66,7 @@ class _QuizState extends State<Quiz> {
 
     // Mengembalikan tata letak aplikasi
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
