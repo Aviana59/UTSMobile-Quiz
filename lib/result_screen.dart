@@ -77,7 +77,7 @@ class ResultsScreen extends StatelessWidget {
                 children: [
                   // Menampilkan jumlah pertanyaan yang dijawab dengan benar
                   Text(
-                    'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
+                    'Kamu menjawab $numCorrectQuestions dari $numTotalQuestions pertanyaan dengan benar!',
                     style: GoogleFonts.lato(
                       color: const Color.fromARGB(255, 246, 234, 255),
                       fontSize: 20,
